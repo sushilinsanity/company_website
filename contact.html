@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to My Company</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="menubar" class="menubar top">
+      <header>
+        <h2 class="logo"><a href="index.html">My Company</a></h2>
+      </header>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header id="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <h1>Contact Us</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas,
+              temporibus?
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card p-4">
+              <div class="card-body">
+                <h4>Get In Touch</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur, odio!
+                </p>
+                <h4>Address</h4>
+                <p>Delhi, India IN</p>
+                <h4>Email</h4>
+                <p>test@test.com</p>
+                <h4>Phone</h4>
+                <p>(777) 777-7777</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card p-4">
+              <form
+                action="https://formspree.io/f/mwkwaapy"
+                method="POST"
+                id="my-form"
+              >
+                <div class="card-body">
+                  <h3 class="text-center">
+                    Please fill out this form to contact us
+                  </h3>
+                  <hr />
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Name"
+                          name="name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email"
+                          name="email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Phone Number"
+                          name="phone"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          placeholder="Message"
+                          name="message"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="submit"
+                          value="Submit"
+                          class="btn btn-outline-danger btn-block"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div id="status"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAFF -->
+    <section id="staff" class="py-5 text-center bg-dark text-white">
+      <div class="container">
+        <h1>Our Staff</h1>
+        <hr />
+        <div class="row">
+          <div class="col-md-3">
+            <img
+              src="./images/staff/person1.jpg"
+              alt=""
+              class="img-fluid rounded-circle mb-2"
+            />
+            <h4>Person Name</h4>
+            <small>Founder</small>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="./images/staff/person2.jpg"
+              alt=""
+              class="img-fluid rounded-circle mb-2"
+            />
+            <h4>Person Name</h4>
+            <small>Position</small>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="./images/staff/person3.jpg"
+              alt=""
+              class="img-fluid rounded-circle mb-2"
+            />
+            <h4>Person Name</h4>
+            <small>Position</small>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="./images/staff/person4.jpg"
+              alt=""
+              class="img-fluid rounded-circle mb-2"
+            />
+            <h4>Person Name</h4>
+            <small>Position</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span id="year">2021 - </span> AnimeLife</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        // get the form elements defined in your form HTML above
+
+        var form = document.getElementById('my-form')
+        // var button = document.getElementById("my-form-button");
+        var status = document.getElementById('status')
+
+        // Success and Error functions for after the form is submitted
+
+        function success() {
+          form.reset()
+          status.classList.add('success')
+          status.innerHTML = 'Your form has been submitted. Thanks!'
+        }
+
+        function error() {
+          status.classList.add('error')
+          status.innerHTML = 'Oops! There was a problem.'
+        }
+
+        // handle the form submission event
+
+        form.addEventListener('submit', function (ev) {
+          ev.preventDefault()
+          var data = new FormData(form)
+          ajax(form.method, form.action, data, success, error)
+        })
+      })
+
+      // helper function for sending an AJAX request
+
+      function ajax(method, url, data, success, error) {
+        var xhr = new XMLHttpRequest()
+        xhr.open(method, url)
+        xhr.setRequestHeader('Accept', 'application/json')
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return
+          if (xhr.status === 200) {
+            success(xhr.response, xhr.responseType)
+          } else {
+            error(xhr.status, xhr.response, xhr.responseType)
+          }
+        }
+        xhr.send(data)
+      }
+    </script>
+  </body>
+</html>
