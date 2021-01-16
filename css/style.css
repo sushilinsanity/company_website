@@ -155,7 +155,8 @@ a:hover {
   top: 100vh;
 }
 
-#home-heading {
+#home-heading,
+#contact-heading {
   position: relative;
   min-height: 200px;
   /* background: url('../img/lights.jpg'); */

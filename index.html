@@ -11,6 +11,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -20,15 +22,15 @@
       </header>
       <div class="menu">
         <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
 
-    <section class="showcase">
+    <section class="showcase" id="home">
       <video src="main_video.mp4" muted loop autoplay></video>
 
       <div class="text">
@@ -120,6 +122,359 @@
         </div>
       </section>
 
+      <!-- ABOUT SECTION -->
+      <section id="about" class="py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1>What We Do</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                fuga eaque. Amet, assumenda aliquid tempore dolorum error
+                eveniet doloribus sed repellat quod, dolores fuga ipsam soluta.
+                Aliquam accusantium pariatur aut sint deleniti laborum ducimus
+                voluptatem? Architecto cumque quod suscipit officiis soluta,
+                voluptate dicta blanditiis similique praesentium temporibus
+                adipisci debitis labore!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                fuga eaque. Amet, assumenda aliquid tempore dolorum error
+                eveniet doloribus sed repellat quod, dolores fuga ipsam soluta.
+                Aliquam accusantium pariatur aut sint deleniti laborum ducimus
+                voluptatem? Architecto cumque quod suscipit officiis soluta,
+                voluptate dicta blanditiis similique praesentium temporibus
+                adipisci debitis labore!
+              </p>
+            </div>
+            <div class="col-md-6 about-img-container">
+              <img
+                src="./images/products/product1.jpg"
+                alt=""
+                class="img-fluid rounded-circle d-none d-md-block about-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="p-4 bg-dark text-white">
+        <div class="container">
+          <h2 class="text-center">testimonials</h2>
+          <div class="row text-center">
+            <div class="col">
+              <div class="slider">
+                <div>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugit, quaerat.
+                    </p>
+                    <footer class="blockquote-footer">
+                      Person From
+                      <cite title="Company 1">Company 1</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugit, quaerat.
+                    </p>
+                    <footer class="blockquote-footer">
+                      Person From
+                      <cite title="Company 2">Company 2</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugit, quaerat.
+                    </p>
+                    <footer class="blockquote-footer">
+                      Person From
+                      <cite title="Company 3">Company 3</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PHOTO GALLERY -->
+      <section class="py-5" id="products">
+        <div class="container">
+          <h1 class="text-center">Product Gallery</h1>
+          <p class="text-center">Check out our products</p>
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <a
+                href="./images/products/product2.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+                data-height="560"
+                data-width="560"
+              >
+                <img
+                  src="./images/products/product2.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a
+                href="./images/products/product3.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+                data-height="561"
+                data-width="561"
+              >
+                <img
+                  src="./images/products/product3.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a
+                href="./images/products/product1.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+                data-height="562"
+                data-width="562"
+              >
+                <img
+                  src="./images/products/product1.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <a
+                href="./images/products/product1.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+                data-height="563"
+                data-width="563"
+              >
+                <img
+                  src="./images/products/product1.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a
+                href="./images/products/product3.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+                data-height="564"
+                data-width="564"
+              >
+                <img
+                  src="./images/products/product3.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a
+                href="./images/products/product2.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+                data-height="565"
+                data-width="565"
+              >
+                <img
+                  src="./images/products/product2.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact-heading" class="py-5">
+        <div class="dark-overlay">
+          <div class="row">
+            <div class="col">
+              <div class="container pt-5">
+                <h1>Contact Us</h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas,
+                  temporibus?
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card p-4">
+                <div class="card-body">
+                  <h4>Get In Touch</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, odio!
+                  </p>
+                  <h4>Address</h4>
+                  <p>Delhi, India IN</p>
+                  <h4>Email</h4>
+                  <p>test@test.com</p>
+                  <h4>Phone</h4>
+                  <p>(777) 777-7777</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card p-4">
+                <form
+                  action="https://formspree.io/f/mwkwaapy"
+                  method="POST"
+                  id="my-form"
+                >
+                  <div class="card-body">
+                    <h3 class="text-center">
+                      Please fill out this form to contact us
+                    </h3>
+                    <hr />
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Name"
+                            name="name"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Email"
+                            name="email"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Phone Number"
+                            name="phone"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea
+                            class="form-control"
+                            placeholder="Message"
+                            name="message"
+                            required
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input
+                            type="submit"
+                            value="Submit"
+                            class="btn btn-outline-danger btn-block"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div id="status"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STAFF -->
+      <section id="staff" class="py-5 text-center bg-dark text-white">
+        <div class="container">
+          <h1>Our Staff</h1>
+          <hr />
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                src="./images/staff/person1.jpg"
+                alt=""
+                class="img-fluid rounded-circle mb-2"
+              />
+              <h4>Person Name</h4>
+              <small>Founder</small>
+            </div>
+            <div class="col-md-3">
+              <img
+                src="./images/staff/person2.jpg"
+                alt=""
+                class="img-fluid rounded-circle mb-2"
+              />
+              <h4>Person Name</h4>
+              <small>Position</small>
+            </div>
+            <div class="col-md-3">
+              <img
+                src="./images/staff/person3.jpg"
+                alt=""
+                class="img-fluid rounded-circle mb-2"
+              />
+              <h4>Person Name</h4>
+              <small>Position</small>
+            </div>
+            <div class="col-md-3">
+              <img
+                src="./images/staff/person4.jpg"
+                alt=""
+                class="img-fluid rounded-circle mb-2"
+              />
+              <h4>Person Name</h4>
+              <small>Position</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer id="main-footer" class="text-center p-4">
         <div class="container">
           <div class="row">
@@ -130,6 +485,72 @@
         </div>
       </footer>
     </main>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/ekko-lightbox.min.js"></script>
+    <script>
+      // Lightbox Init
+      $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault()
+        $(this).ekkoLightbox()
+      })
+    </script>
+    <script>
+      $('.slider').slick({
+        infinite: true,
+        slideToShow: 1,
+        slideToScroll: 1,
+      })
+    </script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        // get the form elements defined in your form HTML above
+
+        var form = document.getElementById('my-form')
+        // var button = document.getElementById("my-form-button");
+        var status = document.getElementById('status')
+
+        // Success and Error functions for after the form is submitted
+
+        function success() {
+          form.reset()
+          status.classList.add('success')
+          status.innerHTML = 'Your form has been submitted. Thanks!'
+        }
+
+        function error() {
+          status.classList.add('error')
+          status.innerHTML = 'Oops! There was a problem.'
+        }
+
+        // handle the form submission event
+
+        form.addEventListener('submit', function (ev) {
+          ev.preventDefault()
+          var data = new FormData(form)
+          ajax(form.method, form.action, data, success, error)
+        })
+      })
+
+      // helper function for sending an AJAX request
+
+      function ajax(method, url, data, success, error) {
+        var xhr = new XMLHttpRequest()
+        xhr.open(method, url)
+        xhr.setRequestHeader('Accept', 'application/json')
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return
+          if (xhr.status === 200) {
+            success(xhr.response, xhr.responseType)
+          } else {
+            error(xhr.status, xhr.response, xhr.responseType)
+          }
+        }
+        xhr.send(data)
+      }
+    </script>
     <script src="./js/script.js"></script>
   </body>
 </html>
